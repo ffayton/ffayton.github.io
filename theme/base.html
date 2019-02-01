@@ -179,6 +179,10 @@
         {% include "partials/footer.html" %}
       {% endblock %}
     </div>
+<script type="text/javascript" src="https://assets.freshservice.com/widget/freshwidget.js"></script>
+<script type="text/javascript">
+ FreshWidget.init("", {"queryString": "&widgetType=popup&searchArea=no", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "black", "buttonBg": "#5eb6cd", "alignment": "2", "offset": "235px", "formHeight": "500px", "url": "https://carnegiescience.freshservice.com", "label":"toot"} );
+</script>
     {% block scripts %}
       <script src="{{ 'assets/javascripts/application.a76297ae.js' | url }}"></script>
       {% if lang.t("search.language") != "en" %}
@@ -210,6 +214,6 @@
       {% if config.google_analytics %}
         {% include "partials/integrations/analytics.html" %}
       {% endif %}
-    {% endblock %}
+    {% endblock %}    
   </body>
 </html>
